@@ -4,7 +4,7 @@ import UserCardList from '@/components/admin/UserCardList'
 export default async function AdminUsersPage() {
   const supabase = createAdminClient()
 
-  // 1. Fetch all customers
+  // Fetch customers
   const { data: customers, error: customersError } = await supabase
     .from('customers')
     .select('id, role, name, phone, state, created_at')
@@ -20,7 +20,7 @@ export default async function AdminUsersPage() {
     )
   }
 
-  // 2. Fetch all auth users (using admin API)
+  // Fetch auth users to get emails
   const { data: authUsers, error: authError } = await supabase.auth.admin.listUsers()
 
   if (authError) {
@@ -33,14 +33,19 @@ export default async function AdminUsersPage() {
     )
   }
 
-  // 3. Combine: attach email to each customer
-  const users = customers?.map(customer => {
+  // Combine and ensure role is never null
+  const users = (customers || []).map(customer => {
     const authUser = authUsers.users.find(u => u.id === customer.id)
     return {
-      ...customer,
+      id: customer.id,
       email: authUser?.email || 'Unknown',
+      role: customer.role || 'user', // 👈 fallback to 'user' if null
+      name: customer.name,
+      phone: customer.phone,
+      state: customer.state,
+      created_at: customer.created_at,
     }
-  }) || []
+  })
 
   return (
     <div>
