@@ -32,3 +32,11 @@ export const isProductNew = (createdAt: string): boolean => {
   threeDaysAgo.setDate(threeDaysAgo.getDate() - 3)
   return new Date(createdAt) >= threeDaysAgo
 }
+
+export const getBaseUrl = () => {
+  if (process.env.VERCEL_URL) {
+    // Vercel automatically sets this env var
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+};
