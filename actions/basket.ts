@@ -169,10 +169,10 @@ export async function updateBasketDetails(
     state: string
   }
 ) {
-   const verification = await checkBotId();
-  if (verification.isBot) {
-    throw new Error('Suspicious activity detected');
-  }
+  const verification = await checkBotId();
+    if (verification.isBot) {
+      return { success: false, error: 'Suspicious activity detected' };
+    }
   const supabase = await createClient()
 
   const { error } = await supabase
