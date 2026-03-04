@@ -26,6 +26,7 @@ function BasketBtn({ product, isInBasket, loading, showSuccess, onAdd }: BasketB
         title="Already in your basket"
         className="relative flex items-center justify-center w-12 h-12 rounded-full text-gray-900 flex-shrink-0 select-none"
         style={{
+          backgroundColor: '#D4AF37',
           background: 'linear-gradient(135deg, #EDD060 0%, #D4AF37 45%, #A88520 100%)',
           boxShadow: '0 0 0 2px rgba(212,175,55,0.25), 0 0 16px rgba(212,175,55,0.45)',
         }}
@@ -43,6 +44,7 @@ function BasketBtn({ product, isInBasket, loading, showSuccess, onAdd }: BasketB
       <div
         className="relative flex items-center justify-center w-12 h-12 rounded-full text-white flex-shrink-0"
         style={{
+           backgroundColor: '#D4AF37',
           background: 'linear-gradient(135deg, #4ade80 0%, #16a34a 55%, #15803d 100%)',
           boxShadow: '0 0 0 2px rgba(74,222,128,0.25), 0 0 20px rgba(74,222,128,0.55)',
         }}

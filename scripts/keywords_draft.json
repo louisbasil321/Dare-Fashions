@@ -1,0 +1,473 @@
+[
+  {
+    "id": "a64376cc-4b94-4e57-9a1c-8ba6d485ec1c",
+    "name": "Aurora Prestige Dress",
+    "keywords": {
+      "colors": [
+        "orange",
+        "red",
+        "yellow"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "party",
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "54ed0f5b-9934-4fb5-a382-893ed3d00c01",
+    "name": "Forest Prestige Gown",
+    "keywords": {
+      "colors": [
+        "green",
+        "white"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear",
+        "party",
+        "cocktail"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "11e3ebe1-95e0-46a1-9f94-f580e1a8d51d",
+    "name": "The Dominique Gown",
+    "keywords": {
+      "colors": [
+        "red",
+        "black",
+        "gold"
+      ],
+      "materials": [],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "dress",
+        "gown"
+      ],
+      "occasions": [
+        "cocktail",
+        "party",
+        "formal",
+        "resort"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "2386106e-d4d9-4c97-a563-91f331130730",
+    "name": "The Seraphine Gown",
+    "keywords": {
+      "colors": [
+        "brown",
+        "black",
+        "tan",
+        "pink"
+      ],
+      "materials": [],
+      "patterns": [
+        "animal print"
+      ],
+      "categories": [
+        "jumpsuit"
+      ],
+      "occasions": [
+        "party",
+        "streetwear",
+        "casual",
+        "cocktail"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "482a014d-f213-4691-88f6-9f0bbe03719d",
+    "name": "Emerald Opulence Dress",
+    "keywords": {
+      "colors": [
+        "green",
+        "white"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "floral"
+      ],
+      "categories": [
+        "dress",
+        "gown"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear",
+        "party",
+        "resort"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "1b45d4fe-0f90-4417-a637-34c4a885f93f",
+    "name": "Cascade Luxury Dress",
+    "keywords": {
+      "colors": [
+        "black",
+        "white"
+      ],
+      "materials": [],
+      "patterns": [
+        "striped"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "0f68a7a1-4f83-4222-8c6d-25944e2fbdf7",
+    "name": "Black Label Evening Gown",
+    "keywords": {
+      "colors": [
+        "black",
+        "white"
+      ],
+      "materials": [
+        "sequin",
+        "knit"
+      ],
+      "patterns": [],
+      "categories": [
+        "dress",
+        "gown"
+      ],
+      "occasions": [
+        "formal",
+        "cocktail",
+        "party"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "ea820198-99bb-411d-931e-f8180910bfe8",
+    "name": "Twilight Couture Gown",
+    "keywords": {
+      "colors": [
+        "black",
+        "white",
+        "grey"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "dress",
+        "gown",
+        "top"
+      ],
+      "occasions": [
+        "cocktail",
+        "party",
+        "streetwear",
+        "casual"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "60b24ab4-5c30-40d3-ae9f-038fd27a8032",
+    "name": "Aurora Blue Prestige ",
+    "keywords": null,
+    "error": "analysis failed"
+  },
+  {
+    "id": "266a14cd-b429-4f3b-8c18-8f2df899d728",
+    "name": "Ivory Grace Gown",
+    "keywords": {
+      "colors": [
+        "white",
+        "gold"
+      ],
+      "materials": [
+        "lace",
+        "sequin"
+      ],
+      "patterns": [],
+      "categories": [
+        "gown",
+        "dress",
+        "top"
+      ],
+      "occasions": [
+        "formal",
+        "cocktail",
+        "party",
+        "bridal"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "4b0df625-559a-4b81-a6f6-f3a7bea3aaf1",
+    "name": "Sapphire Statement Gown",
+    "keywords": {
+      "colors": [
+        "black",
+        "purple",
+        "pink",
+        "green"
+      ],
+      "materials": [],
+      "patterns": [
+        "floral"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "cocktail",
+        "party",
+        "casual"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "721179fc-8819-4d19-b481-ad3ead76ff3e",
+    "name": "Sovereign Satin Gown",
+    "keywords": {
+      "colors": [
+        "brown",
+        "white",
+        "gold"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "cocktail",
+        "party",
+        "casual"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "2653792f-a9c9-445a-9f4e-d3ced1022ff4",
+    "name": "The Baron Tee",
+    "keywords": {
+      "colors": [
+        "beige",
+        "white",
+        "brown"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "geometric"
+      ],
+      "categories": [
+        "shirt",
+        "top"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "166170d9-02a2-4b81-9d57-de4d56f83288",
+    "name": "The Exchequer Shirt",
+    "keywords": {
+      "colors": [
+        "red",
+        "blue",
+        "white"
+      ],
+      "materials": [],
+      "patterns": [
+        "checkered"
+      ],
+      "categories": [
+        "shirt"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "591337d1-f97a-4bb1-8e44-6802ba41c7d5",
+    "name": "The Chancellor Shirt",
+    "keywords": {
+      "colors": [
+        "red",
+        "black",
+        "white",
+        "blue"
+      ],
+      "materials": [],
+      "patterns": [
+        "checkered"
+      ],
+      "categories": [
+        "shirt"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "160e0ba2-4247-49a6-ab6f-2c88309676de",
+    "name": "The Red Baron Tee",
+    "keywords": {
+      "colors": [
+        "red",
+        "maroon",
+        "black"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "geometric"
+      ],
+      "categories": [
+        "shirt",
+        "top"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "426d9691-d7f9-4e3a-9c32-695e8ece8d3d",
+    "name": "Executive Authority Shirt",
+    "keywords": {
+      "colors": [
+        "red",
+        "blue",
+        "white",
+        "yellow",
+        "black"
+      ],
+      "materials": [
+        "cotton"
+      ],
+      "patterns": [
+        "checkered"
+      ],
+      "categories": [
+        "shirt"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear",
+        "corporate"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "f7108e51-e9f4-4992-b622-52cb5c49be11",
+    "name": "Aurora Prestige Dress",
+    "keywords": {
+      "colors": [
+        "black",
+        "pink",
+        "red"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "floral"
+      ],
+      "categories": [
+        "dress"
+      ],
+      "occasions": [
+        "cocktail",
+        "party",
+        "casual",
+        "streetwear"
+      ],
+      "sizes": []
+    }
+  },
+  {
+    "id": "3efdaf40-3485-4d08-a9af-fe751e9f32ac",
+    "name": "Claret Luxe ",
+    "keywords": {
+      "colors": [
+        "red",
+        "black"
+      ],
+      "materials": [
+        "knit"
+      ],
+      "patterns": [
+        "abstract"
+      ],
+      "categories": [
+        "top",
+        "skirt"
+      ],
+      "occasions": [
+        "casual",
+        "streetwear",
+        "party"
+      ],
+      "sizes": []
+    }
+  }
+]

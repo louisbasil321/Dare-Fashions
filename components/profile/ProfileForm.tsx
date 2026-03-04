@@ -69,9 +69,9 @@ export default function ProfileForm({ customer }: { customer: any }) {
       <button
         type="submit"
         disabled={loading}
-        className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-4 py-2 rounded transition"
+        className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white px-4 py-2 rounded transition"
       >
-        {loading ? 'Saving...' : 'Save Changes'}
+        {loading ? 'Saving...' : 'Save'}
       </button>
       {message && <p className="mt-2 text-sm text-green-600 dark:text-green-400">{message}</p>}
     </form>

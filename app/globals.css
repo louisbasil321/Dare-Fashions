@@ -108,7 +108,9 @@
 }
 
 body {
+  background-color: #FAF7F4; /* fallback */
   background-color: var(--background);
+  color: #1A1A1A; /* fallback */
   color: var(--foreground);
   transition: background-color 0.3s, color 0.2s;
   -webkit-font-smoothing: antialiased;
@@ -118,8 +120,10 @@ body {
 /* Custom utility classes */
 @layer components {
   .card {
+    background-color: #FFFFFF; /* fallback */
     background-color: var(--card);
     border-radius: 0.5rem;
+    border: 1px solid #D8B4A0; /* fallback */
     border: 1px solid var(--border);
     transition: all 0.3s ease;
   }
@@ -130,7 +134,9 @@ body {
   }
   
   .btn-primary {
+    background-color: #D4AF37; /* fallback */
     background-color: var(--primary);
+    color: #1A1A1A; /* fallback */
     color: var(--primary-foreground);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
@@ -144,7 +150,9 @@ body {
   }
   
   .btn-secondary {
+    background-color: #7A1E2C; /* fallback */
     background-color: var(--secondary);
+    color: #FAF7F4; /* fallback */
     color: var(--secondary-foreground);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
@@ -161,11 +169,13 @@ body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #1A1A1A; /* fallback */
     color: var(--foreground);
   }
 
   .section-subtitle {
     font-size: 1.125rem;
+    color: #D4AF37; /* fallback */
     color: var(--accent);
     margin-bottom: 2rem;
   }

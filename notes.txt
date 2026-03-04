@@ -1,0 +1,87 @@
+ai failed products:
+  1: The seraphine Gown (unique): it failed completely it marked the brown dress as red.
+  2: Cascade Luxury Dress: it failed partially .it marked the white and black stripes dress as black only. hmmm... what do we even do for these kinds. maybe for plain horizontal stripes we just not mark?
+  3: Twilight Couture Gown: this dress had no single blue in it. its a black and ash dress and it labeled it blue
+  4: The Baron tee: This t-shirt is clearly milk brown totally red but it called it black
+  5: The Chancellor Shirt: A red coporate shirt being called blue
+
+observations: 1: the only model that worked is gemma   
+              2: it performed almost perfectly for items that had a color hint in their names like blue, red or sapphire. also it failed for "the red baron tee"
+              3: it ran out of limit before finishing only completing 15 out of the 19 fetched products.
+logs:  🔍 The Chancellor Shirt
+    🤖 Trying model: qwen/qwen3-vl-8b-instruct:free
+    ⚠️ Model qwen/qwen3-vl-8b-instruct:free not available (404), skipping...
+    🤖 Trying model: meta-llama/llama-3.2-11b-vision-instruct:free
+    ⚠️ Model meta-llama/llama-3.2-11b-vision-instruct:free not available (404), skipping...
+    🤖 Trying model: google/gemma-3-27b-it:free
+    -> detected color: navy blue
+    ✅ assigned color: navy blue
+    -> detected material: cotton
+    ✅ assigned material: cotton
+
+  🔍 The Red Baron Tee
+    🤖 Trying model: qwen/qwen3-vl-8b-instruct:free
+    ⚠️ Model qwen/qwen3-vl-8b-instruct:free not available (404), skipping...
+    🤖 Trying model: meta-llama/llama-3.2-11b-vision-instruct:free
+    ⚠️ Model meta-llama/llama-3.2-11b-vision-instruct:free not available (404), skipping...
+    🤖 Trying model: google/gemma-3-27b-it:free
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 8s (attempt 3/3)
+    🤖 Trying model: openrouter/free
+    ⏳ Rate limited on openrouter/free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on openrouter/free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on openrouter/free, retrying in 8s (attempt 3/3)
+    ❌ All models exhausted — analysis failed for this product
+    ❌ analysis failed
+
+  🔍 Executive Authority Shirt
+    🤖 Trying model: qwen/qwen3-vl-8b-instruct:free
+    ⚠️ Model qwen/qwen3-vl-8b-instruct:free not available (404), skipping...
+    🤖 Trying model: meta-llama/llama-3.2-11b-vision-instruct:free
+    ⚠️ Model meta-llama/llama-3.2-11b-vision-instruct:free not available (404), skipping...
+    🤖 Trying model: google/gemma-3-27b-it:free
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 8s (attempt 3/3)
+    🤖 Trying model: openrouter/free
+    ⏳ Rate limited on openrouter/free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on openrouter/free, retrying in 4s (attempt 2/3)
+    ⚠️ Model openrouter/free not available (404), skipping...
+    ❌ All models exhausted — analysis failed for this product
+    ❌ analysis failed
+
+  🔍 Aurora Prestige Dress
+    🤖 Trying model: qwen/qwen3-vl-8b-instruct:free
+    ⚠️ Model qwen/qwen3-vl-8b-instruct:free not available (404), skipping...
+    🤖 Trying model: meta-llama/llama-3.2-11b-vision-instruct:free
+    ⚠️ Model meta-llama/llama-3.2-11b-vision-instruct:free not available (404), skipping...
+    🤖 Trying model: google/gemma-3-27b-it:free
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 8s (attempt 3/3)
+    🤖 Trying model: openrouter/free
+    ⏳ Rate limited on openrouter/free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on openrouter/free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on openrouter/free, retrying in 8s (attempt 3/3)
+    ❌ All models exhausted — analysis failed for this product
+    ❌ analysis failed
+
+  🔍 Claret Luxe
+    🤖 Trying model: qwen/qwen3-vl-8b-instruct:free
+    ⚠️ Model qwen/qwen3-vl-8b-instruct:free not available (404), skipping...
+    🤖 Trying model: meta-llama/llama-3.2-11b-vision-instruct:free
+    ⚠️ Model meta-llama/llama-3.2-11b-vision-instruct:free not available (404), skipping...
+    🤖 Trying model: google/gemma-3-27b-it:free
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on google/gemma-3-27b-it:free, retrying in 8s (attempt 3/3)
+    🤖 Trying model: openrouter/free
+    ⏳ Rate limited on openrouter/free, retrying in 2s (attempt 1/3)
+    ⏳ Rate limited on openrouter/free, retrying in 4s (attempt 2/3)
+    ⏳ Rate limited on openrouter/free, retrying in 8s (attempt 3/3)
+    ❌ All models exhausted — analysis failed for this product
+    ❌ analysis failed
+
+✅ Done. Processed 19 products, enriched 15.
+conclusion:  Its not bad overally showing a 67% accuracy but lets look for the best free alternative. and why is it interoreting colors wrongly?. could we make the image more easily to analyze?

@@ -1,4 +1,3 @@
-
 export type Json =
   | string
   | number
@@ -270,6 +269,8 @@ export type Database = {
           description: string | null
           id: string
           image_url: string | null
+          keywords: Json | null
+          keywords_embedding: string | null
           name: string
           price: number
           sex: string
@@ -283,6 +284,8 @@ export type Database = {
           description?: string | null
           id?: string
           image_url?: string | null
+          keywords?: Json | null
+          keywords_embedding?: string | null
           name: string
           price: number
           sex?: string
@@ -296,6 +299,8 @@ export type Database = {
           description?: string | null
           id?: string
           image_url?: string | null
+          keywords?: Json | null
+          keywords_embedding?: string | null
           name?: string
           price?: number
           sex?: string
@@ -352,6 +357,13 @@ export type Database = {
       get_guest_session_id: { Args: never; Returns: string }
       is_admin: { Args: never; Returns: boolean }
       mark_baskets_paid: { Args: { basket_ids: string[] }; Returns: undefined }
+      match_products: {
+        Args: { match_threshold: number; query_embedding: string }
+        Returns: {
+          id: string
+          similarity: number
+        }[]
+      }
       merge_basket_items: {
         Args: { source_basket_id: string; target_basket_id: string }
         Returns: undefined
@@ -368,10 +380,19 @@ export type Database = {
         Args: { p_guest_session_id: string; p_user_id: string }
         Returns: Json
       }
+      search_products_by_trigram: {
+        Args: { search_query: string; similarity_threshold?: number }
+        Returns: {
+          id: string
+          similarity_score: number
+        }[]
+      }
       set_app_guest_session_id: {
         Args: { session_id: string }
         Returns: undefined
       }
+      show_limit: { Args: never; Returns: number }
+      show_trgm: { Args: { "": string }; Returns: string[] }
     }
     Enums: {
       [_ in never]: never
