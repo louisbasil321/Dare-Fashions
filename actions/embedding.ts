@@ -1,9 +1,12 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
-import { pipeline } from '@xenova/transformers'
+import { pipeline, env } from '@xenova/transformers'
 
-// Reuse the same model as vectorSearch.ts — singleton to avoid reloading
+// Force WASM backend — required for serverless environments
+// that don't have libonnxruntime.so native binaries
+env.backends.onnx.wasm.numThreads = 1
+
 let embedder: Promise<any> | null = null
 
 async function getEmbedder() {
@@ -12,7 +15,6 @@ async function getEmbedder() {
   }
   return embedder
 }
-
 export async function updateProductEmbedding(productId: string, keywords: any) {
   const supabase = await createClient()
 
