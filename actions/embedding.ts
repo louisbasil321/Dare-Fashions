@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 
 export async function updateProductEmbedding(productId: string, keywords: any) {
   const text = [
@@ -13,7 +13,7 @@ export async function updateProductEmbedding(productId: string, keywords: any) {
 
   if (!text) return
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
 
   const { error } = await supabase.functions.invoke('hyper-responder', {
     body: { productId, keywords },
