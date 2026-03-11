@@ -1,5 +1,5 @@
 
-
+import {cookies} from 'next/headers'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import OrderCard from '@/components/orders/OrderCard'
@@ -11,21 +11,46 @@ export default async function OrdersPage({
 }: {
   searchParams: Promise<{ delivered?: string }>
 }) {
+  const cookieStore = await cookies()
+  const userBasketId = cookieStore.get('basketId')?.value
+  const guestSessionId = cookieStore.get('guest_session_id')?.value
   const { delivered } = await searchParams
   const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
 
-  let query = supabase
+  let customer_orders: any[] = []
+
+if (user) {
+  const { data: userOrders } = await supabase
     .from('orders')
-    .select('*')
+    .select(`
+      *,
+      items:order_items(
+        *,
+        product:products(*)
+      )
+    `)
+    .eq('customer_id', user.id)
     .order('paid_at', { ascending: false })
 
-  if (delivered === 'true') {
-    query = query.not('delivered_at', 'is', null)
-  } else if (delivered === 'false') {
-    query = query.is('delivered_at', null)
-  }
+  if (userOrders) customer_orders = userOrders
+}
 
-  const { data: orders } = await query
+if (customer_orders.length === 0 && guestSessionId) {
+  const { data: guestOrders } = await supabase
+    .from('orders')
+    .select(`
+      *,
+      items:order_items(
+        *,
+        product:products(*)
+      )
+    `)
+    .eq('guest_session_id', guestSessionId)
+    .order('paid_at', { ascending: false })
+
+  if (guestOrders) customer_orders = guestOrders
+}
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -42,9 +67,9 @@ export default async function OrdersPage({
 
       <OrderFilter />
 
-      {orders && orders.length > 0 ? (
+      {customer_orders && customer_orders.length > 0 ? (
         <div className="space-y-4">
-          {orders.map((order) => (
+          {customer_orders.map((order) => (
             <OrderCard key={order.id} order={order} />
           ))}
         </div>

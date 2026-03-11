@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "update-types": "del lib\\supabase\\types.ts /f /q & npx supabase gen types typescript --project-id xxlkvcyykwfvxwrhwhhd > lib/supabase/types.ts"
+    "update-types": "del lib\\supabase\\types.ts /f /q & npx supabase gen types typescript --project-id xxlkvcyykwfvxwrhwhhd > lib/supabase/types.ts",
+    "git-redeploy": "git add . && git commit -m \"A redeploy\" && git push -u origin main"
   },
   "dependencies": {
     "@google/genai": "^1.43.0",
