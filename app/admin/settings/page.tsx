@@ -1,4 +1,4 @@
-import { createAdminClient } from '@/lib/supabase/admin'
+'use server'
 import AdminSocialSettings from '@/components/admin/AdminSocialSettings'
 
 export default async function AdminSettingsPage() {

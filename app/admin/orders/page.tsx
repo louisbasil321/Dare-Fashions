@@ -1,3 +1,5 @@
+'use server'
+
 import { createAdminClient } from '@/lib/supabase/admin'
 import OrdersFilter from '@/components/admin/OrdersFilter'
 import OrdersTable from '@/components/admin/OrdersTable'

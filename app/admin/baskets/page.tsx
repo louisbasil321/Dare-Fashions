@@ -1,3 +1,4 @@
+'use server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { BasketCardList } from '@/components/admin/BasketCardList'
 import MessageExtractor from '@/components/admin/MessageExtractor'

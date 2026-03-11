@@ -1,3 +1,4 @@
+'use server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import ProductForm from '@/components/admin/ProductForm'
 import { ProductCardList } from '@/components/admin/ProductCardList'
